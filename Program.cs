@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext <NotelyDbContext>(options =>
+builder.Services.AddDbContext<NotelyDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DConnection"));
 });

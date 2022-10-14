@@ -7,7 +7,7 @@ namespace NotelyRestApi.Data
     {
         public NotelyDbContext(DbContextOptions<NotelyDbContext> options) : base(options)
         {
-                
+
         }
 
         public DbSet<Note> Notes => Set<Note>();
