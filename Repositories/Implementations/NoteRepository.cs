@@ -12,7 +12,7 @@ namespace NotelyRestApi.Repositories.Implementations
 
         public NoteRepository(NotelyDbContext context)
         {
-            _context = context;
+            _context =  context;
         }
 
         public IEnumerable<Note> GetAllNotes()
